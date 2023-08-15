@@ -1,0 +1,49 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+    background-color: darkorchid;
+    display:flex;
+    justify-content: space-evenly;
+  }
+footer ul{
+    list-style: none;
+    color: aliceblue;
+  }
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vh;
+  }
+.LogoFooter{
+    height: 15vh;
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 10vh;
+    margin-left: 5vw;
+  }
+.rede{
+  width: 2vw;
+  padding: 0.5vw;
+}
+.redes{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  margin-left: 4vw;
+  margin-bottom: 4vh;
+}
+footer h1{
+  margin: 0;
+  margin-top: 5vh;
+}
+footer h6{
+  margin-top: 3vh;
+  margin-left: 2vw;
+}

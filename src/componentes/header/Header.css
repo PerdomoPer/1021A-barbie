@@ -1,0 +1,36 @@
+header{
+  background-color: lightpink;
+  display:flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 10vh;
+  align-items: center;
+}
+header ul{
+  display: flex;
+  list-style: none;
+  gap: 1.5vw;
+}
+header ul li a{
+  padding: 1.5vh;
+  text-decoration: none;
+  color: white;
+  border: 1px solid hotpink;
+}
+header a:hover{
+  background-color: darkorchid;
+  color: black;
+  transition: 750ms linear;
+}
+.Logo{
+  height: 7vh;
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: 1vh;
+  margin-left: 4vw;
+}
+.ultimo{
+  margin-right: 5vw;
+}
