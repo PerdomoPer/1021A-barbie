@@ -1,0 +1,9 @@
+.filme-content{
+    min-height: 300px;
+    min-width: 200px;
+    background-color: hotpink  ;
+}
+.filme-content>img{
+    width: 100vw;
+    height: auto;
+}

@@ -1,15 +1,19 @@
 import './Footer.css'
 import Link from './../link/Link'
+import imagem from ".././../assets/barbiefooter.png"
+import imagem1 from ".././../assets/instagram_icon_logo.png"
+import imagem2 from ".././../assets/facebook.png"
+import imagem3 from ".././../assets/th.png"
 
 export function Footer(){
     return(
       <footer>
         <div>
-          <img className='LogoFooter' src="src/componentes/barbiefooter.png" alt="" />
+          <img className='LogoFooter' src={imagem} alt="" />
             <div className='redes'>
-              <img className='rede' src="src/componentes/instagram_icon_logo.png" alt="" />
-              <img className='rede' src="src/componentes/facebook.png" alt="" />
-              <img className='rede' src="src/componentes/th.png" alt="" />
+              <img className='rede' src={imagem1} alt="" />
+              <img className='rede' src={imagem2} alt="" />
+              <img className='rede' src={imagem3} alt="" />
             </div>
         </div>
         <nav>
