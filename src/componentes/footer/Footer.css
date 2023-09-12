@@ -1,8 +1,8 @@
 footer{
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: -100%;
     width: 100%;
-    height: 15vh;
+    height: 30vh;
     background-color: darkorchid;
     display:flex;
     justify-content: space-evenly;
@@ -19,9 +19,9 @@ footer ul li a{
     padding-top: 2vh;
   }
 .LogoFooter{
-    height: 5vh;
+    height: 15vh;
     display: flex;
-    position: fixed;
+    position: absolute;
     left: 0;
     bottom: 0;
     margin-bottom: 10vh;
@@ -32,7 +32,7 @@ footer ul li a{
   padding: 0.5vw;
 }
 .redes{
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   display: flex;
