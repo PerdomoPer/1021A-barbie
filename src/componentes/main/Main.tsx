@@ -1,31 +1,44 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Filme from './../filme/Filme'
 import './Main.css'
-type FilmeTypes{
+type FilmeType = {
     id:number,
     titulo:string,
-    sinopse:string
+    sinopse:string,
     imagem:string
 }
-export default function Main(){ 
 
-    const [texto, setTexto]=useState("")
-    
-    const filmes:FilmeTypes = [
+export default function Main() {
+
+    const [texto,setTexto]=useState("")
+
+    const filmes:FilmeType[] = [
         {
+            id:1,
             titulo:'Barbie',
             sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
-            imagem:'/filme.png'     
+            imagem:'/barbie.png'
         },
         {
-            titulo='Filme Barbie',
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.',
-            imagem='/filme1.jpg'/>
-        }
+            id:2,
+            titulo:'Filme Barbie',
+            sinopse:'Depois de ser expulsa da Barbieland por ser.',
+            imagem:'/KEN.png'
+        },
+        {
+            id:3,
+            titulo:'Filme Barbie',
+            sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.',
+            imagem:'/boneca.jpg'
+        },
+        {
+            id:5,
+            titulo:'Barbie',
+            sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
+            imagem:'/barbie.png'
+        },
     ]
     function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
-        
-    
         setTexto(e.target.value)
     }
     return(
@@ -39,6 +52,23 @@ export default function Main(){
                 
         </div>
         <main className="content-main">
+        {
+                    filmes.filter((filme)=>filme.titulo.toLowerCase().includes(texto)).map(
+                        (filme)=>
+                            <Filme 
+                                key={filme.id}
+                                sinopse={filme.sinopse}
+                                titulo={filme.titulo}
+                                imagem={filme.imagem}
+                            />
+                    )
+                }
+                
+            
+            
+            
+            
+            {/*
             <Filme titulo='Barbie' 
             sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
             imagem='/filme.png'/>
@@ -62,7 +92,8 @@ export default function Main(){
             imagem='/filme6.jpg'/>
             <Filme titulo='Barbie' 
             sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme7.jpg'/>
+            imagem='/filme7.jpg'/>  
+        */}
         </main>
         </>
     )
