@@ -17,25 +17,49 @@ export default function Main() {
             id:1,
             titulo:'Barbie',
             sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
-            imagem:'/barbie.png'
+            imagem:'/filme.png'
         },
         {
             id:2,
-            titulo:'Filme Barbie',
-            sinopse:'Depois de ser expulsa da Barbieland por ser.',
-            imagem:'/KEN.png'
+            titulo:'Barbie Aventura de Cavalos',
+            sinopse:'Barbie treina um cavalo selvagem com suas irmãs durante suas férias nos Alpes.',
+            imagem:'/filme1.jpg'
         },
         {
             id:3,
-            titulo:'Filme Barbie',
-            sinopse:'Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.',
-            imagem:'/boneca.jpg'
+            titulo:'Barbie em Vida de Sereia ',
+            sinopse:'Merliah vai à Austrália participar de um torneio de surfe e evitar que Eris se apodere de Oceana.',
+            imagem:'/filme2.jpg'
+        },
+        {
+            id:4,
+            titulo:'Barbie e as Agentes Secretas',
+            sinopse:"Barbie e suas melhores amigas Teresa e Renee se transformam em agentes secretas em uma aventura cheia de ação. ",
+            imagem:'/filme3.jpg'
         },
         {
             id:5,
-            titulo:'Barbie',
-            sinopse:"Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.",
-            imagem:'/barbie.png'
+            titulo:'Barbie e o Segredo das Fadas',
+            sinopse:"Mundos mágicos, fadas e cavalos voadores são alguns dos elementos encontrados neste filme da Barbie. ",
+            imagem:'/filme4.jpg'
+        },
+        {
+            id:6,
+            titulo:'Barbie - A Princesa & a Pop Star',
+            sinopse:"Keira é uma estrela pop mundialmente conhecida. Tori é a princesa de Meribella e fã de Keira. ",
+            imagem:'/filme5.jpg'
+        },
+        {
+            id:7,
+            titulo:'Barbie: a Fashion Fairytale',
+            sinopse:"Em um conto de fadas fashion, Barbie viaja a Paris para salvar o ateliê de moda da sua tia, que está prestes a ser fechado.",
+            imagem:'/filme6.jpg'
+        },
+        {
+            id:8,
+            titulo:'Barbie: Aventura nas Estrelas',
+            sinopse:"A vida despreocupada que Barbie leva em seu planeta, ao lado do bicho de estimação Pipoca, fica ameaçada quando a boneca descobre que o brilho da galáxia está desaparecendo.",
+            imagem:'/filme7.jpg'
         },
     ]
     function TrataTexto(e:React.ChangeEvent<HTMLInputElement>){
@@ -44,11 +68,11 @@ export default function Main() {
     return(
         <>
         <div>
-            <input className='pesquisa' type="text" placeholder='O que você está procurando?'onChange={TrataTexto} />
-            {
-                (!texto)?
-                "": <p className='pesquisa1'>Digitado: {texto} </p>
-            }
+            <input className='pesquisa' 
+            type="text" 
+            placeholder='O que você está procurando?'
+            onChange={TrataTexto} />
+            {texto && <p className='pesquisa1'>Resultados Para: {texto} </p>}
                 
         </div>
         <main className="content-main">
@@ -63,37 +87,6 @@ export default function Main() {
                             />
                     )
                 }
-                
-            
-            
-            
-            
-            {/*
-            <Filme titulo='Barbie' 
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme.png'/>
-            <Filme titulo='Filme Barbie' 
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme1.jpg'/>
-             <Filme titulo='Barbie' 
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme2.jpg'/>
-             <Filme titulo='Barbie' 
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme3.jpg'/>
-             <Filme titulo='Barbie' 
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme4.jpg'/>
-             <Filme titulo='Barbie' 
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme5.jpg'/>
-             <Filme titulo='Barbie' 
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme6.jpg'/>
-            <Filme titulo='Barbie' 
-            sinopse='Depois de ser expulsa da Barbieland por ser uma boneca de aparência menos do que perfeita, Barbie parte para o mundo humano em busca da verdadeira felicidade.'
-            imagem='/filme7.jpg'/>  
-        */}
         </main>
         </>
     )

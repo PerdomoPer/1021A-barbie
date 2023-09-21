@@ -8,20 +8,20 @@
 .pesquisa{
     font-size: 2vh;
     padding: 1vh;
-    width: 30vw;
+    width: 40vw;
     height: 2vh;
     border-radius: 1vw;
     border: 1px solid magenta;
-    margin-left: 35vw;
+    margin-left: 30vw;
     margin-top: 2.5vh;
     margin-bottom: 1vh;
 }
 .pesquisa1{
     font-size: 2vh;
     padding: 1vh;
-    width: 30vw;
+    width: 40vw;
     height: 2vh;
-    margin-left: 35vw;
+    margin-left: 30vw;
     margin-top: 2.5vh;
     margin-bottom: 1vh;
 }
