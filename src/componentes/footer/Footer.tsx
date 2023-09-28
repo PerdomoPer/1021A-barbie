@@ -1,5 +1,5 @@
 import './Footer.css'
-import Link from './../link/Link'
+import Link from '../linknav/LinkNav'
 import imagem from ".././../assets/barbiefooter.png"
 import imagem1 from ".././../assets/instagram_icon_logo.png"
 import imagem2 from ".././../assets/facebook.png"
