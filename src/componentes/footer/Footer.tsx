@@ -1,5 +1,5 @@
 import './Footer.css'
-import Link from '../linknav/LinkNav'
+import LinkNav from '../linknav/LinkNav'
 import imagem from ".././../assets/barbiefooter.png"
 import imagem1 from ".././../assets/instagram_icon_logo.png"
 import imagem2 from ".././../assets/facebook.png"
@@ -19,40 +19,40 @@ export function Footer(){
         <nav>
           <ul>
                 <li> <h1>Produtos</h1>
-              <Link texto='Bonecas'/>
-              <Link texto='Roupas'/>
-              <Link texto='Acessórios'/>
-              <Link texto='Casas de Bonecas'/>
+              <LinkNav url="/bonecas" texto='Bonecas'/>
+              <LinkNav url="/roupas" texto='Roupas'/>
+              <LinkNav url="/acessorios" texto='Acessórios'/>
+              <LinkNav url="/casasdebonecas" texto='Casas de Bonecas'/>
                 </li>
             </ul>
         </nav>
         <nav>
             <ul>
                 <li> <h1>Filmes</h1>
-              <Link texto='Barbie e os Golfinhos Mágicos'/>
-              <Link texto='Barbie em Um Mundo de Vídeo Game'/>
-              <Link texto='Barbie Lago dos Cisnes'/>
-              <Link texto='Barbie em Vida de Sereia'/>
+              <LinkNav url="/golfinhos" texto='Barbie e os Golfinhos Mágicos'/>
+              <LinkNav url="/videogame" texto='Barbie em Um Mundo de Vídeo Game'/>
+              <LinkNav url="/cisnes" texto='Barbie Lago dos Cisnes'/>
+              <LinkNav url="/sereia" texto='Barbie em Vida de Sereia'/>
                 </li>
             </ul>
         </nav>
         <nav>
             <ul>
                 <li> <h1>Contato</h1>
-              <Link texto='Contato'/>
-              <Link texto='Recall de Podutos e Segurança'/>
-              <Link texto='Feedback'/>
-              <Link texto='Oportunidades de Emprego'/>
+              <LinkNav url="/contato" texto='Contato'/>
+              <LinkNav url="/recall" texto='Recall de Podutos e Segurança'/>
+              <LinkNav url="/feedback" texto='Feedback'/>
+              <LinkNav url="/emprego" texto='Oportunidades de Emprego'/>
                 </li>
             </ul>
         </nav>
         <nav>
             <ul> <h1>Termos e Condições</h1>
                 <li>
-              <Link texto='Declaração de Privacidade'/>
-              <Link texto='Cookies e Tecnologia'/>
-              <Link texto='Declaração de Acessibilidade'/>
-              <Link texto='Cookie Preferences'/>
+              <LinkNav url="/privacidade" texto='Declaração de Privacidade'/>
+              <LinkNav url="/tecnologia" texto='Cookies e Tecnologia'/>
+              <LinkNav url="/acessibilidade" texto='Declaração de Acessibilidade'/>
+              <LinkNav url="/preferences" texto='Cookie Preferences'/>
               <h6>©2023 Barbie</h6>
                 </li>
             </ul>

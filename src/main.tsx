@@ -6,7 +6,6 @@ import Header from './componentes/header/Header.tsx';
 import Main from './componentes/main/Main.tsx';
 import Footer from './componentes/footer/Footer.tsx';
 
-
 const router = createBrowserRouter([
   {
     path: "/",
