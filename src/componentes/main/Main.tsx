@@ -33,7 +33,7 @@ export default function Main() {
 }
 
   
-  return (
+  return (  
     <>
        <div>
             <input className='pesquisa' 
